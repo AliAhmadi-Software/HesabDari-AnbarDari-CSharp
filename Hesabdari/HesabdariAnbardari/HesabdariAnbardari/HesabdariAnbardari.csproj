@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8CB9A79-3B84-4119-B05F-B1ACB1327A1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HesabdariAnbardari</RootNamespace>
+    <AssemblyName>HesabdariAnbardari</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Shopping.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BehComponents">
+      <HintPath>..\..\..\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnbar.Designer.cs">
+      <DependentUpon>frmAnbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChekDaryafti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChekDaryafti.Designer.cs">
+      <DependentUpon>frmChekDaryafti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChekPardakhti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChekPardakhti.Designer.cs">
+      <DependentUpon>frmChekPardakhti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContact.Designer.cs">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmControlKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControlKala.Designer.cs">
+      <DependentUpon>frmControlKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDarAmad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDarAmad.Designer.cs">
+      <DependentUpon>frmDarAmad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactorFroosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactorFroosh.Designer.cs">
+      <DependentUpon>frmFactorFroosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaktorkharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaktorkharid.Designer.cs">
+      <DependentUpon>frmFaktorkharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrooh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrooh.Designer.cs">
+      <DependentUpon>frmGrooh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHazineh.Designer.cs">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHesabha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHesabha.Designer.cs">
+      <DependentUpon>frmHesabha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJabeJayeAnbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJabeJayeAnbar.Designer.cs">
+      <DependentUpon>frmJabeJayeAnbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKala.Designer.cs">
+      <DependentUpon>frmKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKarbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKarbar.Designer.cs">
+      <DependentUpon>frmKarbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListChekDaryafti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListChekDaryafti.Designer.cs">
+      <DependentUpon>frmListChekDaryafti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListChekP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListChekP.Designer.cs">
+      <DependentUpon>frmListChekP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListDarAmad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListDarAmad.Designer.cs">
+      <DependentUpon>frmListDarAmad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListFactorFroosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListFactorFroosh.Designer.cs">
+      <DependentUpon>frmListFactorFroosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListFactorKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListFactorKharid.Designer.cs">
+      <DependentUpon>frmListFactorKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListHazineh.Designer.cs">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHesabha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListHesabha.Designer.cs">
+      <DependentUpon>frmListHesabha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListJabeJaye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListJabeJaye.Designer.cs">
+      <DependentUpon>frmListJabeJaye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListKala.Designer.cs">
+      <DependentUpon>frmListKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListMoshtari.Designer.cs">
+      <DependentUpon>frmListMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoading.Designer.cs">
+      <DependentUpon>FrmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaliyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaliyat.Designer.cs">
+      <DependentUpon>frmMaliyat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoshtari.Designer.cs">
+      <DependentUpon>frmMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPardakht.Designer.cs">
+      <DependentUpon>frmPardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportMoshtari.Designer.cs">
+      <DependentUpon>frmReportMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSarResid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSarResid.Designer.cs">
+      <DependentUpon>frmSarResid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSood.Designer.cs">
+      <DependentUpon>frmSood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTanzimat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTanzimat.Designer.cs">
+      <DependentUpon>frmTanzimat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVariz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVariz.Designer.cs">
+      <DependentUpon>frmVariz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnbar.resx">
+      <DependentUpon>frmAnbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChekDaryafti.resx">
+      <DependentUpon>frmChekDaryafti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChekPardakhti.resx">
+      <DependentUpon>frmChekPardakhti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContact.resx">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlKala.resx">
+      <DependentUpon>frmControlKala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDarAmad.resx">
+      <DependentUpon>frmDarAmad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactorFroosh.resx">
+      <DependentUpon>frmFactorFroosh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaktorkharid.resx">
+      <DependentUpon>frmFaktorkharid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrooh.resx">
+      <DependentUpon>frmGrooh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHazineh.resx">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHesabha.resx">
+      <DependentUpon>frmHesabha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJabeJayeAnbar.resx">
+      <DependentUpon>frmJabeJayeAnbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKala.resx">
+      <DependentUpon>frmKala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKarbar.resx">
+      <DependentUpon>frmKarbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListChekDaryafti.resx">
+      <DependentUpon>frmListChekDaryafti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListChekP.resx">
+      <DependentUpon>frmListChekP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListDarAmad.resx">
+      <DependentUpon>frmListDarAmad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListFactorFroosh.resx">
+      <DependentUpon>frmListFactorFroosh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListFactorKharid.resx">
+      <DependentUpon>frmListFactorKharid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHazineh.resx">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHesabha.resx">
+      <DependentUpon>frmListHesabha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListJabeJaye.resx">
+      <DependentUpon>frmListJabeJaye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListKala.resx">
+      <DependentUpon>frmListKala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListMoshtari.resx">
+      <DependentUpon>frmListMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoading.resx">
+      <DependentUpon>FrmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaliyat.resx">
+      <DependentUpon>frmMaliyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoshtari.resx">
+      <DependentUpon>frmMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPardakht.resx">
+      <DependentUpon>frmPardakht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportMoshtari.resx">
+      <DependentUpon>frmReportMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSarResid.resx">
+      <DependentUpon>frmSarResid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSood.resx">
+      <DependentUpon>frmSood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTanzimat.resx">
+      <DependentUpon>frmTanzimat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVariz.resx">
+      <DependentUpon>frmVariz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Shopping.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
